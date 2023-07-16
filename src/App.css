@@ -176,7 +176,9 @@ body {
   #REUSED STYLE
 \*-----------------------------------*/
 
-.container { padding-inline: 15px; }
+.container { 
+  padding-inline: 15px;
+}
 
 .section { padding-block: var(--section-padding); }
 
@@ -311,9 +313,10 @@ body {
   left: 0;
   width: 100%;
   background-color: var(--white);
-  padding-block: 12px;
+  padding-block: 0px 12px;
   box-shadow: var(--shadow-1);
   z-index: 4;
+  margin-bottom: 40px!important;
 }
 
 .header.active { position: fixed; }

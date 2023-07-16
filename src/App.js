@@ -14,6 +14,10 @@ export default function App() {
   function menuIconClick() {
     setMenuIcon()
   }
+
+  function menuIconClose() {
+    setMenuIcon()
+  }
   return (
     <div className='Container'>
       <BrowserRouter>
