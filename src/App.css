@@ -371,3 +371,43 @@ body {
   padding: 15px 20px;
   border-block-end: 1px solid var(--platinum);
 }
+
+.nav-close-btn {
+  background-color: var(--white);
+  box-shadow: var(--shadow-2);
+  padding: 8px;
+  border-radius: var(--radius-circle);
+}
+
+.nav-close-btn:is(:hover, :focus) {
+  background-color: var(--kappel);
+  color: var(--white);
+}
+
+.navbar-list { padding: 15px 20px; }
+
+.navbar-item:not(:last-child) { border-block-end: 1px solid var(--platinum); }
+
+.navbar-link {
+  padding-block: 8px;
+  font-weight: var(--fw-500);
+  transition: var(--transition-1);
+}
+
+.navbar-link:is(:hover, :focus) { color: var(--kappel); }
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: var(--black_80);
+  pointer-events: none;
+  opacity: 0;
+  z-index: 1;
+  transition: var(--transition-1);
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
