@@ -6,6 +6,7 @@ import About from './components/About';
 import Logo from './components/img/kagos-removebg-preview.png'
 import './App.css'
 import Courses from './components/Courses';
+import Contact from './components/Contact';
 
 export default function App() {
   const [menuIcon, setMenuIcon] = useState(false)
@@ -52,7 +53,7 @@ export default function App() {
                   </li>
 
                   <li class="navbar-item">
-                    <Link to="/about" className="navbar-link">Contact</Link>
+                    <Link to="/contact" className="navbar-link">Contact</Link>
                   </li>
 
                 </ul>
@@ -82,6 +83,7 @@ export default function App() {
               </button>
 
             </div>
+            <div class="overlay" data-nav-toggler data-overlay></div>
           </div>
         </header>
 
@@ -89,6 +91,7 @@ export default function App() {
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/courses' element={<Courses />} />
+          <Route path='/contact' element={<Contact />} />
         </Routes>
       </BrowserRouter>
     </div>
