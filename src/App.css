@@ -720,3 +720,16 @@ body {
   z-index: 1;
   animation: pulse 3s ease infinite;
 }
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 var(--white_50); }
+  100% { box-shadow: 0 0 0 20px transparent; }
+}
+
+.video-banner::after {
+  inset: 0;
+  background-color: var(--black_30);
+}
+
+
+
